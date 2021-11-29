@@ -3,7 +3,7 @@
     <router-link to="/">Home</router-link> |
     <router-link to="/about">About</router-link>
   </div> -->
-	<div class="container">
+	<div class="app">
 	<div class="container-image"></div>
 	<!-- <img  alt="food logo" src="../public/food.png"> -->
 	<div class="nav-block"></div>
@@ -27,6 +27,7 @@
 		</nav>
 	</header> -->
 <main class="main-block"></main>
+<div class="main-block-into"></div>
 <img class="main-block-icon" src="../public/Yarlik.png" alt="icon eu">
 <h1 class="main-block-title">Умная посуда для приготовления</h1>
 <img class="main-block-line" src="../public/Rectangle-233.png" alt="icon line">
@@ -89,7 +90,27 @@
 	</div>
 </template>
 
+<script>
+
+
+</script>
+
+
+
+
 <style>
+@font-face {
+  font-family: "StemMedium";
+  src: url("assets/fonts/Stem-Medium.ttf")
+}
+@font-face {
+  font-family: "StemRegular";
+	src: url("assets/fonts/Stem-Regular.ttf")
+}
+@font-face {
+  font-family: "StemSemiLight";
+	src: url("assets/fonts/Stem-SemiLight.ttf")
+}
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -97,7 +118,7 @@
 	text-decoration: none;
 	list-style: none;
 }
-.container {
+.app {
 position: relative;
 width: 1920px;
 height: 9047px;
@@ -262,11 +283,21 @@ left: 537px;
 top: 516px;
 
 
-background: 100% url("../public/Rectangle-235.png");
+background: 50% url("../public/Rectangle-235.png");
 
 /* Shed */
 
 filter: drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.06)) drop-shadow(0px 10px 80px rgba(0, 0, 0, 0.1));
+}
+.main-block-into {
+	position: absolute;
+width: 582px;
+height: 361px;
+left: 682px;
+top: 584px;
+
+background: #FAFAFA;
+border-radius: 160px 160px 70px 70px;
 }
 .main-block-icon {
 position: absolute;
